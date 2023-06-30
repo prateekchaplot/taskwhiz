@@ -1,2 +1,6 @@
 bin
 obj
+
+.angular
+.vscode
+node_modules
