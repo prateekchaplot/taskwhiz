@@ -1,0 +1,9 @@
+.login-div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-google {
+    align-self: center;
+}
