@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppLoginService } from '../service/app-login.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  title = 'frontend';
+  constructor(private loginService: AppLoginService) {
+  }
+
+  signOut() {
+    this.loginService.removeJwtToken();
+    location.reload();
+  }
 }

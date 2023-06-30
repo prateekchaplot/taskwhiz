@@ -15,4 +15,9 @@ export class AppLoginService {
     this.isLoggedIn = true;
     localStorage.setItem('jwtToken', jwtToken);
   }
+
+  removeJwtToken() {
+    this.isLoggedIn = false;
+    localStorage.removeItem('jwtToken');
+  }
 }
